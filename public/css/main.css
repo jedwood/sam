@@ -1,6 +1,25 @@
 body {
-  mt: 20px;
-  mb: 40px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+form label {
+  font-weight: bold;
+  margin-top: 0.5em;
+}
+ul.guidelines {
+  font-size: 1.2em;
+}
+ul.guidelines li {
+  margin-top: 15px;
+}
+.left-side {
+  margin-top: 10px;
+}
+.btn.continue {
+  margin-top: 15px;
+}
+.nav-tabs li.active a {
+  background-color: #eee;
 }
 .container-narrow {
   margin: 0 auto;

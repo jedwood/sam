@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SAM.gov || New Business Registration</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/vendor/modernizr.js"></script>
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/jquery.form.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+  </head>
+  <body>
+    <div class="container-narrow">
+      <div class="masthead">
+        <ul class="guidelines">
+          <li>Mark optional fields and remove all non-vital fields.</li>
+          <li>Validate entries before form is submitted (try entering a email with incorrect format).</li>
+          <li>Be flexible with input format (e.g. phone).</li>
+        </ul>
+      </div>
+      <hr>
+      <div class="row-fluid">
+        <div class="span3 left-side">
+          <ul class="nav nav-tabs nav-stacked">
+            <li class="active"><a href="#">Contact info</a></li>
+            <li><a href="#">Step 2</a></li>
+            <li><a href="#">Step 3</a></li>
+          </ul>
+        </div>
+        <div class="span5 offset1">
+          <form>
+            <label>First name</label>
+            <input id="fname" type="text">
+            <label>Last name</label>
+            <input id="lname" type="text">
+            <label>Email address</label>
+            <input id="email" type="email">
+            <label>Confirm email address</label>
+            <input id="confirmemail" type="email">
+            <label>Phone</label>
+            <input id="phone" type="text">
+            <label>Phone extension (optional)</label>
+            <input id="phoneext" type="text">
+            <button type="submit" class="btn continue">Save & Continue</button>
+          </form>
+        </div>
+      </div>
+      <hr>
+      <div class="footer">
+        <p class="muted">rfp-ez</p>
+      </div>
+    </div>
+  </body>
+</html>

@@ -6,14 +6,15 @@ html
   body
     .container-narrow
       .masthead
-        //- ul.nav.nav-pills.pull-right
-        //-   li.active
-        //-     a(href='#') Home
-        //-   li
-        //-     a(href='#') About
-        //-   li
-        //-     a(href='#') Contact
-        h3.muted SAM.gov -- improving the first-time registration experience
+        block masthead
+          //- ul.nav.nav-pills.pull-right
+          //-   li.active
+          //-     a(href='#') Home
+          //-   li
+          //-     a(href='#') About
+          //-   li
+          //-     a(href='#') Contact
+          h3.muted SAM.gov - improving the first-time registration experience
       hr
       block content
 

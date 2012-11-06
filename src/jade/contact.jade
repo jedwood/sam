@@ -1,0 +1,31 @@
+extends base
+block masthead
+  ul.guidelines
+    li Mark optional fields and remove all non-vital fields.
+    li Validate entries before form is submitted (try entering a email with incorrect format).
+    li Be flexible with input format (e.g. phone).
+block content
+  .row-fluid
+    include sidenav
+    .span5.offset1
+      form
+        label First name
+        input#fname(type="text")
+
+        label Last name
+        input#lname(type="text")
+
+        label Email address
+        input#email(type="email")
+
+        label Confirm email address
+        input#confirmemail(type="email")
+
+        label Phone
+        input#phone(type="text")
+
+        label Phone extension (optional)
+        input#phoneext(type="text")
+
+        button.btn.continue(type="submit") Save & Continue
+
