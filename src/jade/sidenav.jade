@@ -1,5 +1,8 @@
 .span3.left-side
   ul.nav.nav-tabs.nav-stacked
-    li.active: a(href="#") Contact info
-    li: a(href="#") Step 2
-    li: a(href="#") Step 3
+    - navs = [{title:"Purpose", href:"/index"}, {title:"Contact info", href:"contact"}, {title:"Step 2", href:"#"}, {title:"Step 3", href:"#"}]
+    each nav in navs
+      if activenav == nav.href
+        li.active: a(href=nav.href + ".html")= nav.title
+      else
+        li: a(href=nav.href + ".html")= nav.title
