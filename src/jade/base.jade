@@ -1,3 +1,11 @@
+mixin helper_tooltip(title)
+  span.helper-tooltip(data-title=title, data-trigger='manual', data-placement='right')
+    i.icon-question-sign.icon-white
+
+mixin helper_popover(title, content)
+  span.helper-popover(data-title=title, data-content=content, data-trigger='manual', data-placement='right')
+    i.icon-question-sign.icon-white
+
 !!!
 html
   head

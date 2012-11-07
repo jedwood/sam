@@ -2,6 +2,10 @@ body {
   margin-top: 20px;
   margin-bottom: 40px;
 }
+.container-narrow {
+  margin: 0 auto;
+  max-width: 700px;
+}
 form label {
   font-weight: bold;
   margin-top: 0.5em;
@@ -12,16 +16,31 @@ ul.guidelines {
 ul.guidelines li {
   margin-top: 15px;
 }
+.tooltip-inner {
+  font-size: 12px;
+  line-height: 16px;
+}
+.helper-tooltip {
+  display: inline-block;
+  background-color: #08c;
+  -webkit-border-radius: 9px;
+  border-radius: 9px;
+  height: 18px;
+  width: 18px;
+  margin: 0 10px;
+}
+.helper-tooltip i {
+  margin: -4px 0 0 2px;
+}
 .left-side {
   margin-top: 10px;
 }
 .btn.continue {
   margin-top: 15px;
 }
+.duns-paths {
+  margin-top: 15px;
+}
 .nav-tabs li.active a {
   background-color: #eee;
-}
-.container-narrow {
-  margin: 0 auto;
-  max-width: 700px;
 }

@@ -1,0 +1,27 @@
+extends base
+append guidelines
+  li Provide inline help; from simple "what's this?" hover tips to full screencast walkthroughs.
+block content
+  .row-fluid
+    - activenav = "duns"
+    include sidenav
+    .span7.offset1
+      h3 DUNS Number
+        mixin helper_tooltip("DUNS numbers are unique for each business and help government agencies confirm your business information. They are assigned by a company called Dun and Bradstreet (D&B).")
+
+      form#duns-form
+        label.radio
+          input#know-duns-btn.duns-btn(type='radio', name='dunsopts', value='yes-duns')
+          | I know my company's DUNS number.
+        label.radio
+          input#no-duns-btn.duns-btn(type='radio', name='dunsopts', value='no-duns', checked='checked')
+          | I don't have or don't know the DUNS number.
+
+        .control-group.duns-paths.yes-duns.input-append.hide
+          label DUNS
+          input#duns(type="text", name="duns")
+          button.btn(type="button") Verify
+
+        .no-duns.duns-paths
+          p.lead Getting a DUNS number for your business is free, takes about 10 minutes, and can be done on online.
+          p Watch this short video tutorial, and complete the application on the D&B website when you're ready.
